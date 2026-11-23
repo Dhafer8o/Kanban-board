@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Kanban Board</h1>
+
+        <div class="board">
+            <!-- Cards are rendered from saved data by script.js -->
+            <section class="list" data-status="todo">
+                <h2>To Do <span class="count">0</span></h2>
+                <div class="cards"></div>
+                <form class="add-form">
+                    <input type="text" placeholder="Add a task..." maxlength="100" aria-label="New task in To Do">
+                    <button type="submit" aria-label="Add task to To Do">+</button>
+                </form>
+            </section>
+
+            <section class="list" data-status="in-progress">
+                <h2>In Progress <span class="count">0</span></h2>
+                <div class="cards"></div>
+                <form class="add-form">
+                    <input type="text" placeholder="Add a task..." maxlength="100" aria-label="New task in In Progress">
+                    <button type="submit" aria-label="Add task to In Progress">+</button>
+                </form>
+            </section>
+
+            <section class="list" data-status="done">
+                <h2>Done <span class="count">0</span></h2>
+                <div class="cards"></div>
+                <form class="add-form">
+                    <input type="text" placeholder="Add a task..." maxlength="100" aria-label="New task in Done">
+                    <button type="submit" aria-label="Add task to Done">+</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
